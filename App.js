@@ -1,8 +1,11 @@
-import Home from "./src/pages/Home";
-import Header from "./src/components/Header";
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import Routes from './src/routes'; 
 
 export default function App() {
   return (
-    <Home/>
+    <NavigationContainer>
+      <Routes />
+    </NavigationContainer>
   );
 }
