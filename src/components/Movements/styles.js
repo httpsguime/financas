@@ -22,14 +22,14 @@ export const Date = styled.Text`
 export const Label = styled.Text`
     font-weight: bold;
     font-size: 16px;
-    margin-right: auto; /* Isso faz com que o Label fique à esquerda */
+    margin-right: auto; 
 `;
 
 export const Value = styled.Text`
     font-size: 16px;
     color: #2ecc71;
     font-weight: bold;
-    margin-left: auto; /* Isso faz com que o Value fique à direita */
+    margin-left: auto; 
 `;
 
 
@@ -39,7 +39,7 @@ export const Espenses = styled.Text`
     font-weight: bold;
 `;
 
-export const Skeleton = styled.Text`
+export const Skeleton = styled.View`
     margin-top: 6px;
     width: 80px;
     height: 10px;

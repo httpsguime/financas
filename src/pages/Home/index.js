@@ -4,6 +4,7 @@ import { FlatList, Text } from 'react-native';
 import { Container, Title, TransactionList } from './styles';
 import Balance from '../../components/Balance'
 import Movements from '../../components/Movements';
+import Actions from '../../components/Actions'
 const list = [
   {
     id: 1,
@@ -34,7 +35,7 @@ export default function Home() {
       <Header name="Guilherme"/>
       
       <Balance saldo="3.567.90" gastos="-678.76"/> 
-
+      <Actions/>
       <Title>Histórico</Title>
     <TransactionList>
       <FlatList

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { TouchableOpacity } from 'react-native';
-import { Container, Date, Content, Label, Value, Espenses, Skeleton } from './styles'; // Importe todos os estilos do arquivo de estilos
+import { Container, Date, Content, Label, Value, Espenses, Skeleton } from './styles'; 
 
 export default function Movements ({ data }){
     const [showValue, setShowValue] = useState(false);
@@ -8,7 +8,7 @@ export default function Movements ({ data }){
 
     return(
         <Container>
-            <TouchableOpacity>        
+            <TouchableOpacity onPress={ () => setShowValue(!showValue)}>        
                 <Date>{data.date}</Date> 
                     <Content>
                         <Label>{data.label}</Label>
